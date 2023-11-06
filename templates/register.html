@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+    
+
+<head>        
+        
+        <!-- Meta -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+        
+        <!-- Title -->
+        <title>Code Camp</title>
+        
+       
+        
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7CLato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+        
+        
+        <!-- Stylesheet -->
+        <link href="{% static "css/styles.css" %}" rel="stylesheet" type="text/css" />
+        <link href="{% static "css/login.css" %}" rel="stylesheet" type="text/css" />
+        
+       
+    </head>
+
+
+    <body>
+
+        
+        
+       
+        <div id="content" class="site-content">
+            <div id="primary" class="content-area">
+                <main id="main" class="site-main">
+                    <div class="signin-main">
+                        <div class="container">
+                            <div class="woocommerce">
+                                <div class="woocommerce-login">
+                                    <div class="company-info signin-register">
+                                        <div class="col-md-5 border-dark new-user">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="company-detail new-account bg-light margin-right">
+                                                        <div class="new-user-head">
+                                                            <h2>Sing Up</h2>
+                                                            <br>
+                                                            <br>
+                                                        </div>
+                                                        <form action="" class="login" method="POST">
+                                                            {% csrf_token %}
+                                                            <label>
+                                                                <span class="first-letter">Username</span>  
+                                                                <span class="second-letter">*</span>
+                                                            </label>
+                                                            <p class="form-row form-row-first input-required">  
+                                                                <input type="text" id="username1" name="username" class="input-text">
+                                                            </p>
+                                                            <label>
+                                                                <span class="first-letter">Email</span>  
+                                                                <span class="second-letter">*</span>
+                                                            </label>
+                                                            <p class="form-row input-required">
+                                                                <input type="text" id="username1" name="username" class="input-text">
+                                                            </p>
+                                                            <label>
+                                                                <span class="first-letter">Password</span>  
+                                                                <span class="second-letter">*</span>
+                                                            </label>
+                                                            <p class="form-row input-required">
+                                                                <input type="text" id="username1" name="username" class="input-text">
+                                                            </p>
+                                                            <label>
+                                                                <span class="first-letter">Confirm Password</span>  
+                                                                <span class="second-letter">*</span>
+                                                            </label>
+                                                            <p class="form-row input-required">
+                                                                <input type="text" id="username1" name="username" class="input-text">
+                                                            </p>
+                                                                                                                                           
+                                                           
+                                                            <div class="form-submit">
+                                                                <input type="submit" value="Login" name="login" class="button btn btn-default" >
+                                                            </div> 
+                                                            <div class="clear"></div>
+                                                            <br>
+                                                            <p >
+                                                                have an account?
+                                                                <a href="#" style="color:#D10024;">Login</a>
+                                                            </p>
+                                                        </form> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+
+    </body>
+
+
+</html>

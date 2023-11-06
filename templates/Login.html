@@ -1,35 +1,94 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href='{% static "css/login.css" %}' >
-</head>
-<body>
-    <div class="login-main">
-        <div class="login-container">
-            <h2 class="login-header">sign in</h2>
-            <div class="form-container">
-                <form>
-                    <div class="form-input">
-                        <input type="text" placeholder="Username *">
-                    </div>
-                    <div class="form-input">
-                        <input type="password" placeholder="Password *">
-                    </div>
-                    <div class="login-footer">
-                        <div class="form-submit">
-                            <input type="submit" value="login">
+<html lang="zxx">
+    
+
+<head>        
+        
+        <!-- Meta -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+        
+        <!-- Title -->
+        <title>Code Camp</title>    
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7CLato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+        
+        <link href="{% static "css/styles.css" %}" rel="stylesheet" type="text/css" />
+        <link href="{% static "css/login.css" %}" rel="stylesheet" type="text/css" />
+        
+
+    </head>
+
+
+    <body>
+        
+       
+        <div id="content" class="site-content">
+            <div id="primary" class="content-area">
+                <main id="main" class="site-main">
+                    <div class="signin-main">
+                        <div class="container">
+                            <div class="woocommerce">
+                                <div class="woocommerce-login">
+                                    <div class="company-info signin-register">
+                                        <div class="col-md-5 border-dark col-md-offset-1">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="company-detail new-account bg-dark margin-right">
+                                                        <div class="signin-head">
+                                                            <h2>Sign in</h2>
+                                                            <span class="underline left"></span>
+                                                        </div>
+                                                        <form class="login" method="POST">
+                                                            {% csrf_token %}
+                                                            <label>
+                                                                <span style="color:white;"> Username </span>  
+                                                                <span class="second-letter" style="color:#D10024;">*</span>
+                                                            </label>
+                                                            <p class="form-row form-row-first input-required">
+                                                               
+                                                                <input type="text"  id="username" name="username" class="input-text">
+                                                            </p>
+                                                             <label>
+                                                                <span style="color:white;"> Password </span>  
+                                                                <span class="second-letter" style="color:#D10024;">*</span>
+                                                            </label>
+                                                            <p class="form-row form-row-last input-required">
+                                                                
+                                                                <input type="text" id="password" name="password" class="input-text">
+                                                            </p>
+                                                            <div class="password-form-row">
+                                                                <p class="lost_password">
+                                                                    
+                                                                </p>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                             <div class="password-form-row">
+                                                                <p class="lost_password">
+                                                                    <a href="#">Forgot Password</a>
+                                                                </p>
+                                                            </div>
+                                                            <div class="form-submit">
+                                                                <input type="submit" value="Login" name="login" class="button btn btn-default" >
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <div class="login-forgot">forgot password</div>
-                        </div>
                     </div>
-                </form>
+                </main>
             </div>
         </div>
-    </div>
-</body>
+
+     
+    </body>
+
+
 </html>
