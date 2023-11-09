@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/cart.css' %}"/>
+</head>
+<body>
+    <div class="cart-body">
+        <div class="cart-shopping">
+            <div class="cart-shop">
+                <button >continue shopping</button>
+            </div>
+            <div class="cart-heading">
+                <div class="cart-total">
+                    <div>Item: 6</div>
+                    <div>Total: $907.96</div>
+                </div>
+                <div class="cart-check">
+                    <button>Checkout</button>
+                </div>
+            </div>
+        </div>
+        <div class="gray-line"></div>
+        <section>
+            <div class="cart-table">
+                <table class="cart-main-table">
+                    <thead class="cart-table-head">
+                        <tr>
+                            <th>Item</th>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody style="border: 1px solid #000;" class="cart-table-body">
+                        <tr >
+                            <td>Headphones</td>
+                            <td>Headphones</td>
+                            <td>Headphones</td>
+                            <td>Headphones</td>
+                            <td>Headphones</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
