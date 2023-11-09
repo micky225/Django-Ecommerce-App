@@ -1,17 +1,22 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
-    <link type="text/css" rel="stylesheet" href="{% static 'css/cart.css' %}"/>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/cart.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <div class="cart-body">
         <div class="cart-shopping">
             <div class="cart-shop">
-                <button >continue shopping</button>
+                <button>continue shopping</button>
             </div>
             <div class="cart-heading">
                 <div class="cart-total">
@@ -26,7 +31,35 @@
         <div class="gray-line"></div>
         <section>
             <div class="cart-table">
-                <table class="cart-main-table">
+                <div class="cart-item-heading">
+                    <div class="cart-head">Item</div>
+                    <div class="cart-head">Item</div>
+                    <div class="cart-head">Price</div>
+                    <div class="cart-head">Quantity</div>
+                    <div class="cart-head">Total</div>
+                </div>
+                <div class="cart-content flex-item-center flex-row flex-start">
+                    <div class="flex-1">
+                        <div class="cart-content-img">
+                            <img src="../static/img/cartItem.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex-1 cart-content-item">Headphone</div>
+                    <div class="flex-1 cart-content-item">$179.99</div>
+                    <div class="flex-1 cart-content-item flex-row flex-center flex-start">
+                        <div class="cart-content-num">2</div>
+                        <div class="cart-content-num_icon flex-col flex-center">
+                            <div class="num-icon-up num-icon">
+                                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                            </div>
+                            <div class="num-icon-down num-icon">
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 cart-content-item">$359.98</div>
+                </div>
+                <!-- <table class="cart-main-table">
                     <thead class="cart-table-head">
                         <tr>
                             <th>Item</th>
@@ -36,8 +69,8 @@
                             <th>Total</th>
                         </tr>
                     </thead>
-                    <tbody style="border: 1px solid #000;" class="cart-table-body">
-                        <tr >
+                    <tbody  class="cart-table-body">
+                        <tr style="border: 1px solid #000;">
                             <td>Headphones</td>
                             <td>Headphones</td>
                             <td>Headphones</td>
@@ -45,9 +78,10 @@
                             <td>Headphones</td>
                         </tr>
                     </tbody>
-                </table>
+                </table> -->
             </div>
         </section>
     </div>
 </body>
+
 </html>
